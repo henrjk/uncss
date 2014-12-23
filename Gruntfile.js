@@ -46,5 +46,6 @@ module.exports = function(grunt) {
     grunt.registerTask('cover', ['mochacov:coverage']);
     grunt.registerTask('test', ['jshint', 'mochacov:unit']);
     grunt.registerTask('travis', ['jshint', 'mochacov:unit', 'mochacov:coveralls']);
+    grunt.registerTask('shippable', ['jshint', 'mochacov:unit', 'mochacov:coverage']);
     grunt.registerTask('default', 'test');
 };
